@@ -1,0 +1,25 @@
+### Send a prediction request to the local RentRadar API
+POST http://127.0.0.1:5000/predict
+Content-Type: application/json
+
+{
+    "year": 2026,
+    "month": 8,
+    "suburb": "Nedlands",
+    "property_type": "Apartment",
+    "bedrooms": 2,
+    "bathrooms": 1
+}
+
+### Test with another suburb
+POST http://127.0.0.1:5000/predict
+Content-Type: application/json
+
+{
+    "year": 2025,
+    "month": 12,
+    "suburb": "Armadale",
+    "property_type": "House",
+    "bedrooms": 3,
+    "bathrooms": 2
+}
